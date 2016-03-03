@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellowcolor">#4A708B</color>
+    <color name="whitecolor">#FFFFFF</color>
+    <color name="browncolor">#104E8B</color>
+    <color name="palecolor">#E0E0E0</color>
+    <color name="blackcolor">#000000</color>
+    <color name="redcolor">#CD950C</color>
+    <color name="graycolor">#8E8E8E</color>
+    <color name="tucency">#0000</color>
+    <color name="bluecolor">#4A708B</color>
+
+</resources>

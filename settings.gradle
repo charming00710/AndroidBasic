@@ -1,0 +1,2 @@
+include ':app', ':demo1', ':repository_test', ':sqlitedemo', ':internetdemo', ':volleydemo', ':greeendaodemo', ':fresco', ':beeplayer', ':slidingmenu', ':snail', ':test'
+project(':slidingmenu').projectDir = new File('libraries/slidingmenu')

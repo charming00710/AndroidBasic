@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin35"
+        android:src="@color/browncolor" />
+
+    <TextView
+        android:id="@+id/tv_showtime"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin35"
+        android:gravity="center"
+        android:text="@string/setsleep_hint"
+        android:textSize="@dimen/text_size15" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin2"
+        android:src="@drawable/icon_line" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/setsleep_off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/setsleep_off"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+
+        <RadioButton
+            android:id="@+id/setsleep_ten"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setsleep_ten"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+
+        <RadioButton
+            android:id="@+id/setsleep_twenty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setsleep_twenty"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+
+        <RadioButton
+            android:id="@+id/setsleep_thirty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setsleep_thirty"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+
+        <RadioButton
+            android:id="@+id/setsleep_sixty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setsleep_sixty"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+
+        <RadioButton
+            android:id="@+id/setsleep_ninety"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setsleep_ninety"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+
+        <RadioButton
+            android:id="@+id/setsleep_custom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setsleep_custom"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin2"
+            android:src="@drawable/icon_line" />
+    </RadioGroup>
+
+</LinearLayout>

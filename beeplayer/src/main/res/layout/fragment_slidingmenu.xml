@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/browncolor"
+    android:paddingTop="@dimen/margin50" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin50" >
+
+        <com.example.beeplayer.bs.view.CircleImageView
+            android:id="@+id/img_heard"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin15"
+            android:src="@drawable/icon_head" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin28"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_toEndOf="@+id/img_heard"
+            android:layout_toRightOf="@+id/img_heard"
+            android:gravity="center_vertical"
+            android:text="@string/userinfo"
+            android:textColor="@color/whitecolor"
+            android:textSize="@dimen/text_size15" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_scanMusic"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_above="@+id/image_line3"
+        android:gravity="center"
+        android:text="@string/scanMusic"
+        android:textColor="@color/whitecolor"
+        android:textSize="@dimen/text_size15" />
+
+    <ImageView
+        android:id="@+id/image_line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin2"
+        android:layout_above="@+id/tv_sleep_set"
+        android:src="@drawable/icon_line" />
+
+    <TextView
+        android:id="@+id/tv_sleep_set"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_above="@+id/image_line2"
+        android:gravity="center"
+        android:text="@string/sleep_set"
+        android:textColor="@color/whitecolor"
+        android:textSize="@dimen/text_size15" />
+
+    <ImageView
+        android:id="@+id/image_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin2"
+        android:layout_above="@+id/tv_shake"
+        android:src="@drawable/icon_line" />
+
+    <ToggleButton
+        android:id="@+id/tv_shake"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_above="@+id/image_line1"
+        android:background="#00000000"
+        android:drawableRight="@drawable/switch_btn"
+        android:textColor="@color/whitecolor"
+        android:textOff="@string/turn_off"
+        android:textOn="@string/turn_on"
+        android:textSize="@dimen/text_size15" />
+
+    <ImageView
+        android:id="@+id/image_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin2"
+        android:layout_above="@+id/tv_exit"
+        android:src="@drawable/icon_line" />
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textColor="@color/whitecolor"
+        android:textSize="@dimen/text_size15" />
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowcolor" >
+
+    <LinearLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="@dimen/margin0"
+            android:layout_height="@dimen/margin35"
+            android:layout_weight="1"
+            android:src="@drawable/btn_menu" />
+
+        <LinearLayout
+            android:id="@+id/lin_image"
+            android:layout_width="@dimen/margin0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin0"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_mine"
+                    android:layout_width="@dimen/margin0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/mine"
+                    android:textSize="@dimen/margin20" />
+
+                <TextView
+                    android:id="@+id/tv_find"
+                    android:layout_width="@dimen/margin0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/find"
+                    android:textSize="@dimen/margin20" />
+                <!--
+                <TextView
+                    android:id="@+id/tv_recommmed"
+                    android:layout_width="@dimen/margin0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/recommend"
+                    android:textSize="@dimen/text_size20" />
+                     -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin0"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_slide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:src="@color/browncolor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/margin0"
+            android:layout_height="@dimen/margin35"
+            android:layout_weight="1"
+            android:src="@drawable/btn_search" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/playcontor"
+        android:layout_below="@+id/main_menu" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/lin_rigth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/playcontor"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/playcontor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentBottom="true"
+        android:onClick="openPlay" >
+
+        <ImageView
+            android:id="@+id/imag_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/imag_list"
+            android:src="@drawable/play_list" />
+
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/imag_list"
+            android:src="@drawable/play" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin80"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song"
+                android:textColor="@color/blackcolor" />
+
+            <TextView
+                android:id="@+id/tv_songer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/songer"
+                android:textColor="@color/blackcolor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

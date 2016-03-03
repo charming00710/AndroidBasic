@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidBasic.iml" filepath="$PROJECT_DIR$/AndroidBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beeplayer/beeplayer.iml" filepath="$PROJECT_DIR$/beeplayer/beeplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo1/demo1.iml" filepath="$PROJECT_DIR$/demo1/demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fresco/fresco.iml" filepath="$PROJECT_DIR$/fresco/fresco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greeendaodemo/greeendaodemo.iml" filepath="$PROJECT_DIR$/greeendaodemo/greeendaodemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/internetdemo/internetdemo.iml" filepath="$PROJECT_DIR$/internetdemo/internetdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repository_test/repository_test.iml" filepath="$PROJECT_DIR$/repository_test/repository_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/slidingmenu/slidingmenu.iml" filepath="$PROJECT_DIR$/libraries/slidingmenu/slidingmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snail/snail.iml" filepath="$PROJECT_DIR$/snail/snail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" filepath="$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volleydemo/volleydemo.iml" filepath="$PROJECT_DIR$/volleydemo/volleydemo.iml" />
+    </modules>
+  </component>
+</project>

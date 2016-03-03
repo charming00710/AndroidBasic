@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<com.facebook.drawee.view.SimpleDraweeView-->
+
+    <!--android:id="@+id/simpleDraweeView"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--fresco:fadeDuration="300"/>-->
+    <!--&lt;!&ndash;fresco:actualImageScaleType="fitCenter"&ndash;&gt;-->
+    <!--&lt;!&ndash;fresco:placeholderImage="@drawable/image1"&ndash;&gt;-->
+    <!--&lt;!&ndash;fresco:placeholderImageScaleType="fitCenter"&ndash;&gt;-->
+    <!--&lt;!&ndash;fresco:failureImage="@drawable/image1"&ndash;&gt;-->
+    <!--&lt;!&ndash;fresco:failureImageScaleType="fitCenter" />&ndash;&gt;-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        fresco:placeholderImage="@drawable/image1"
+        />
+
+    <TextView android:id="@+id/formHtml"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+</LinearLayout>

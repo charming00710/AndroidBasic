@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guide_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_null"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/yellowcolor" >
+
+        <ImageView
+            android:id="@+id/image_exit"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:src="@drawable/left43" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/local_music"
+            android:textColor="@color/whitecolor"
+            android:textSize="@dimen/text_size15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@color/browncolor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_song"
+                android:textColor="@color/whitecolor"
+                android:textSize="@dimen/text_size15" />
+
+            <TextView
+                android:id="@+id/tv_songer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_songer"
+                android:textColor="@color/whitecolor"
+                android:textSize="@dimen/text_size15" />
+
+            <TextView
+                android:id="@+id/tv_special"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_special"
+                android:textColor="@color/whitecolor"
+                android:textSize="@dimen/text_size15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:src="@color/redcolor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin2" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

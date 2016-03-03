@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluecolor" >
+
+    <ImageView
+        android:id="@+id/image_bauck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xiaomifeng" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:id="@+id/image_exit"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:layout_centerVertical="true"
+            android:onClick="button"
+            android:src="@drawable/left43" />
+
+        <TextView
+            android:id="@+id/tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_exit"
+            android:text="@string/song"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_songer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_song"
+            android:layout_below="@+id/tv_song"
+            android:text="@string/songer"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rela_seek"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/img_dialog_seekbar_thumb"
+                android:maxHeight="@dimen/margin2" />
+
+            <TextView
+                android:id="@+id/tv_induration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/yellowcolor"
+                android:text="@string/play_time" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/yellowcolor"
+                android:text="@string/play_time" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_control"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" >
+
+            <ImageView
+                android:id="@+id/image_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:onClick="play"
+                android:src="@drawable/play1" />
+
+            <ImageView
+                android:id="@+id/image_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@+id/image_play"
+                android:onClick="play"
+                android:src="@drawable/last" />
+
+            <ImageView
+                android:id="@+id/image_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/image_play"
+                android:onClick="play"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/searchimage"
+        android:layout_width="@dimen/margin50"
+        android:layout_height="@dimen/margin50"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:onClick="button"
+        android:src="@drawable/searchimage" />
+
+    <ImageView
+        android:id="@+id/image_playmode"
+        android:layout_width="@dimen/margin35"
+        android:layout_height="@dimen/margin35"
+        android:layout_alignBottom="@+id/searchimage"
+        android:layout_alignParentLeft="true"
+        android:onClick="button"
+        android:src="@drawable/img_playmode_sequence_playinglist" />
+
+</RelativeLayout>

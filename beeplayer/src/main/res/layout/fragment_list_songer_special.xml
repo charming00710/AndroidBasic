@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guide_background" >
+
+    <LinearLayout
+        android:id="@+id/lin_null"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellowcolor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image_exit"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:src="@drawable/left43" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/whitecolor"
+            android:textSize="@dimen/margin15" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_songer_special"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin2"
+        android:listSelector="@color/bluecolor"
+        android:layout_below="@+id/lin_null" >
+    </ListView>
+
+</RelativeLayout>

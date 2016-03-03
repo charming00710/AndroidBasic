@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">repository_test</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">名字</string>
+    <string name="age">年龄</string>
+    <string name="save">保存</string>
+    <string name="显示">显示</string>
+</resources>

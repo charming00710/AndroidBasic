@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/lin_null"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:background="@color/yellowcolor" >
+
+
+        <ImageView
+                android:id="@+id/image_exit"
+                android:layout_width="@dimen/margin35"
+                android:layout_height="@dimen/margin35"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/left43" />
+            
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="@dimen/margin100"
+                android:layout_height="@dimen/margin35"
+                android:layout_toRightOf="@+id/image_exit"
+                android:layout_toLeftOf="@+id/image_search"
+                android:layout_centerVertical="true"
+				android:gravity="center_vertical"
+				android:background="@color/browncolor"
+                android:ems="10"
+                android:hint="@string/hint_search"
+                android:singleLine="true"
+                android:textSize="@dimen/margin15" />
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="@dimen/margin35"
+                android:layout_height="@dimen/margin35"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_search" />
+
+    </RelativeLayout>
+	<RelativeLayout 
+	    android:id="@+id/frame_search"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/lin_null">
+    <ListView
+        android:id="@+id/lv_serch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin10" >
+    </ListView>
+	</RelativeLayout>
+</RelativeLayout>

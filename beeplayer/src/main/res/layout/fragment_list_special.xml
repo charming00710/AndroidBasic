@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.beeplayer.bs.view.PullToRefreshView
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/list_special"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin2"
+            android:listSelector="@color/yellowcolor" >
+        </ListView>
+    </com.example.beeplayer.bs.view.PullToRefreshView>
+
+</LinearLayout>

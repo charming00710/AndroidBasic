@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="@dimen/margin35"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="@dimen/text_size15"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/image_songer"
+        android:layout_width="@dimen/margin50"
+        android:layout_height="@dimen/margin50"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_order"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_empty" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_songer"
+        android:layout_toLeftOf="@+id/image_down"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="@color/blackcolor"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_songer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@color/blackcolor"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin15"
+        android:src="@drawable/download" />
+
+</RelativeLayout>
