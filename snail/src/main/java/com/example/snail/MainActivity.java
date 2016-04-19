@@ -3,6 +3,7 @@ package com.example.snail;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,6 +31,8 @@ public class MainActivity extends SlidingFragmentActivity implements ViewPager.O
 
     private FindFragment findFragment;
     private FragmentManager fragmentManager;
+
+    private FragmentTransaction transaction;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,4 +86,12 @@ public class MainActivity extends SlidingFragmentActivity implements ViewPager.O
     public void onPageScrollStateChanged(int state) {
 
     }
+
+    public void startFragment(Fragment fragment) {
+        transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.lin_rigth, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
 }

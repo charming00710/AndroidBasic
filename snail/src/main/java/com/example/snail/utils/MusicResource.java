@@ -23,4 +23,8 @@ public class MusicResource {
     public static void clearLocalMusic() {
         localMusicList.clear();
     }
+
+    public static List<Music> getLocalMusicList() {
+        return localMusicList;
+    }
 }

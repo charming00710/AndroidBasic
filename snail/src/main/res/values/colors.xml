@@ -6,9 +6,15 @@
 
     <color name="brown">#104E8B</color>
 
-    <color name="yellow">#4A708B</color>
+    <color name="light_blue">#4A708B</color>
 
     <color name="black">#000000</color>
 
     <color name="white">#FFFFFF</color>
+
+    <color name="blue">#0000FF</color>
+
+    <color name="yellow">#FFFF00</color>
+
+    <color name="light_yellow">#CD950C</color>
 </resources>

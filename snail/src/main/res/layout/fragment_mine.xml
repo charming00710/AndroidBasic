@@ -5,6 +5,7 @@
     android:background="@drawable/guide_background" >
 
     <RelativeLayout
+        android:id="@+id/mine_head"
         android:layout_width="match_parent"
         android:layout_height="200dp">
         <ImageView
@@ -27,5 +28,35 @@
 
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin80"
+        android:layout_below="@+id/mine_head"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/textview_play_list"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/margin5"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36"
+            android:background="@color/light_blue"
+            android:gravity="center"
+            android:text="本地音乐"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textview_latest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36"
+            android:background="@color/light_blue"
+            android:gravity="center"
+            android:text="最近播放"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

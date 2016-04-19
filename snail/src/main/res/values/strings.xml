@@ -8,5 +8,9 @@
     <string name="song">歌曲</string>
     <string name="songer">歌手</string>
 
+    <string name="special">专辑</string>
+
+    <string name="local_music">本地音乐</string>
+
 
 </resources>
